@@ -1,0 +1,8 @@
+<h1>[Child Three] Listen to child events</h1>
+<app-child-three #childThree (onButtonPressed)="onChildThreeClicked()"></app-child-three>
+<span>Count: {{count}}</span>
+<h2>Get a reference from child three component (from template)</h2>
+<button (click)="childThree.emitEvent()">Calling child method from here</button>
+<h2>Get a reference from child three component (with ViewChild)</h2>
+<p>Notice that the child component won't be available in the code until Angular renders the view (afterViewInit)</p>
+<button (click)="childThreeComponent.emitEvent()">Calling child method from here</button>

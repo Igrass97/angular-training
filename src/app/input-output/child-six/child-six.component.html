@@ -1,0 +1,4 @@
+<h2>Todo list</h2>
+<ul>
+    <li *ngFor="let todo of items">{{todo}} <button (click)="deleteTodo(todo)">Complete</button></li>
+</ul>

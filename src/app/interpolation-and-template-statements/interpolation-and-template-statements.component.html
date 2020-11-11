@@ -1,0 +1,13 @@
+<h1>Interpolation and template statements</h1>
+<h2>Interpolation</h2>
+<h3>Interpolating data from the component</h3>
+{{name}}
+<h3>Interpolating simple expressions</h3>
+<p>You can't use assignments operators nor new, typeof, instanceof, etc.</p>
+<p>You can't chain expressions with ; nor ,</p>
+<p>You can't use ++ nor -- operators</p>
+{{ 2 + 2 }}
+<h2>Template statements</h2>
+Template statements are methods or properties that you can execute to respond to user events.
+<p style="color: green; display: inline" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Hover me!</p>
+<p *ngIf="showMsg">I only appear on hover !!</p>

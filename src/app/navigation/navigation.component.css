@@ -1,0 +1,8 @@
+a {
+    color: blue;
+    font-size: 1.3rem;
+}
+
+a.active {
+    color: rgb(31, 134, 31);
+}

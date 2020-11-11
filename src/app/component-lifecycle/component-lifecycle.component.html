@@ -1,0 +1,4 @@
+<h1>[Child One] Lifecycle hooks</h1>
+<button (click)="toggleShowChild()">{{showChildMessage}}</button>
+<input placeholder="child one message" [(ngModel)]="childOneMsg" />
+<app-child-one [msg]="childOneMsg" *ngIf="showChild"></app-child-one>

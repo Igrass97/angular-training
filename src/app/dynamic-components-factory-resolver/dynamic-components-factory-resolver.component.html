@@ -1,0 +1,7 @@
+<h1>Load dynamic components</h1>
+<button (click)="nextComponent()">Load next component</button>
+<button (click)="showModal()">Show modal</button>
+<div *ngIf="closeModalData">
+    Modal closed with: {{closeModalData}}
+</div>
+<ng-template appAnchorPoint></ng-template>

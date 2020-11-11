@@ -1,0 +1,8 @@
+<h1>Input and output properties</h1>
+<app-child-six (onDeleteTodo)="onCompleteTodo($event)" [items]="todoList"></app-child-six>
+<input [(ngModel)]="newTodoName" type="text" />
+<button (click)="addNewTodo()">ADD</button>
+<h2>Completed todos</h2>
+<ul>
+    <li *ngFor="let completedTodo of completedTodos">{{completedTodo}}</li>
+</ul>

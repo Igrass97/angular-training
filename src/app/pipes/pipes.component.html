@@ -1,0 +1,11 @@
+<h1>Pipes</h1>
+<h2>Angular provides built in pipes</h2>
+<p>{{ 'pedro' | uppercase}} (uppercase pipe)</p>
+<p>{{ 'juan' | lowercase }} (lowercase pipe)</p>
+<h2>You can also pass parameters to pipes</h2>
+<p>{{ 345.135 | currency:'USD'}} (currency pipe)</p>
+<h2>Using custom pipe</h2>
+<p>{{'The black rose is beautiful' | capitalizeSentence}}</p>
+<h2>Using async pipe to subscribe to an observable from the template</h2>
+{{ obs$ | async }}
+<button (click)="emitNewNumber()">Emit new number</button>
