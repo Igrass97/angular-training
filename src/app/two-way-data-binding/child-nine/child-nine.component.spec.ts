@@ -1,0 +1,25 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ChildNineComponent } from './child-nine.component';
+
+describe('ChildNineComponent', () => {
+  let component: ChildNineComponent;
+  let fixture: ComponentFixture<ChildNineComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ ChildNineComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(ChildNineComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

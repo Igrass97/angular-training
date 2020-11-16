@@ -1,0 +1,32 @@
+.single-style {
+    color: red;
+    font-size: 2rem;
+}
+
+.small {
+    font-size: 0.9rem;
+}
+
+.big {
+    font-size: 2.5rem;
+}
+
+.dark {
+    color: rgb(100, 28, 28);
+}
+
+.medium {
+    color: rgb(139, 36, 36);
+}
+
+.light {
+    color: rgb(145, 63, 63);
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}

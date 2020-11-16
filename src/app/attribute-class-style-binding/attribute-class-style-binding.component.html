@@ -1,0 +1,27 @@
+<h1>Attribute, class and style binding</h1>
+<h2>Binding to attributes</h2>
+<button [attr.aria-label]="actionName">{{ actionName }}</button>
+<h2>Class binding</h2>
+<h3>Bind to single class</h3>
+<div [class.single-style]="isSingleStyleActive">
+    <p>I'm using class binding</p>
+    <button (click)="activateStyles()">Activate styles</button>
+</div>
+<h3>Bind to class list</h3>
+<h4>Using a single string</h4>
+<div [class]="multipleClassesStr">
+    <p>I'm using a single string with multiple classes</p>
+</div>
+<h4>Using an object</h4>
+<div [class]="{'small': true, 'medium': true}">
+    <p>I'm using an object to add classes</p>
+</div>
+<h4>Using an array</h4>
+<div [class]="['big', 'light']">
+    <p>I'm using an object to add classes</p>
+</div>
+<h2>Style binding</h2>
+<div class="square" [style.width]="'500px'" [style.height]="'500px'" [style.background-color]="squareBackgroundColor">
+    <p>My width & height is set by style binding</p>
+    <button (click)="changeSquareBgColor()" [style]="buttonStyleExpression">Change background</button>
+</div>

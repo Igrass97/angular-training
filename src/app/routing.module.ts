@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AttributeClassStyleBindingComponent } from './attribute-class-style-binding/attribute-class-style-binding.component';
 import { ChildEventsComponent } from './child-events/child-events.component';
 import { CommunicationWithServicesComponent } from './communication-with-services/communication-with-services.component';
 import { ComponentLifecycleComponent } from './component-lifecycle/component-lifecycle.component';
@@ -9,6 +10,7 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
 import { InterpolationAndTemplateStatementsComponent } from './interpolation-and-template-statements/interpolation-and-template-statements.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 
 const routes: Routes = [
   {
@@ -46,6 +48,14 @@ const routes: Routes = [
   {
     path: 'pipes',
     component: PipesComponent
+  },
+  {
+    path: 'att-class-style-binding',
+    component: AttributeClassStyleBindingComponent
+  },
+  {
+    path: 'two-way-data-binding',
+    component: TwoWayDataBindingComponent
   },
   {
     path: '',

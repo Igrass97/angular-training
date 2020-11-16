@@ -25,6 +25,9 @@ import { ModalComponent } from './dynamic-components-factory-resolver/modal/moda
 import { InterpolationAndTemplateStatementsComponent } from './interpolation-and-template-statements/interpolation-and-template-statements.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CapitalizeSentencePipe } from './pipes/capitalize-sentence.pipe';
+import { AttributeClassStyleBindingComponent } from './attribute-class-style-binding/attribute-class-style-binding.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { ChildNineComponent } from './two-way-data-binding/child-nine/child-nine.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { CapitalizeSentencePipe } from './pipes/capitalize-sentence.pipe';
     ModalComponent,
     InterpolationAndTemplateStatementsComponent,
     PipesComponent,
-    CapitalizeSentencePipe
+    CapitalizeSentencePipe,
+    AttributeClassStyleBindingComponent,
+    TwoWayDataBindingComponent,
+    ChildNineComponent
   ],
   imports: [
     BrowserModule,
